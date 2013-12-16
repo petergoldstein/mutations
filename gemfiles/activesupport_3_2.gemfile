@@ -1,0 +1,14 @@
+source 'http://rubygems.org'
+gemspec :path => '../'
+
+gem 'activesupport', '~> 3.2.16'
+
+platforms :rbx do
+  gem 'rubysl', '~> 2.0'
+  gem 'psych'
+  gem 'rubinius-developer_tools'
+end
+
+group :test do
+  gem 'minitest', '~> 4.0'
+end
